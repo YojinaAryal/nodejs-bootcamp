@@ -1,2 +1,3 @@
 const math= require("./math.js");
-console.log(math(2,4));
+setTimeout(()=>{console.log(math.sub(2,4))}, 50)
+
