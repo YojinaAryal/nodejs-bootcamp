@@ -4,4 +4,4 @@ const myServer=http.createServer(( req,res)=>{
     res.end("hello from server");
 
 });
-myServer.listen(8000,()=>console.log("server started"));
+myServer.listen(8000,()=>console.log("server  started"));
