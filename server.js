@@ -1,26 +1,12 @@
-const http=require("http");
-const fs=require("fs");
-const url = require("url");
-
-const myServer=http.createServer(( req,res)=>{
-    if (req.url=="/favicon.ico") return res.end();
-    const log=`:${req.url} new req received \n`;
-    const myUrl=url.parse(req.url,true);
-    console.log(myUrl);
-  fs.appendFile("log.txt",log,(err,data)=>
-  {
- switch(myUrl.pathname)
-    {
-        case '/':
-            res.end("YOU ARE IN HOMEPAGE");
-            break
-        case '/about':
-            const username= myUrl.query.myname;
-
-            res.end(`HI , ${username}`);
-            break
-          default:  res.end("Heeello from server");
-        }
-    });
+const express = require("express");
+const app=express();
+port=8000;
+app.get("/",(req,res)=>{
+    return res.send("HELLO FROM HOMEPAGE.")
 });
-myServer.listen(8000,()=>console.log("server started"));
+app.get('/about',(req,res)=>{
+    return res.send("HELLO FROM ABOUT PAGE.....  "+"HEY "+req.query.name + " I KNOW YOU ARE "+req.query.age);
+});
+
+
+app.listen(port,()=>console.log("server started"));
