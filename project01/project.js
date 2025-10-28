@@ -33,14 +33,19 @@ app.get('/users', (req, res) => {
 //rest apis
 //always add X to custom headers
 
-app.get('/api/users', (req, res) => {
+app.get('/api/users/', (req, res) => {
     res.setHeader("X-myName","Yojina aryal");
-   return res.json(users);
+    
+   return res.json(user);
 })
 
-app.route('/api/users/:id').get((req, res) => {
+app.route('/api/users/:id')
+.get((req, res) => {
     const id = Number(req.params.id);
     const user = users.find((user) => user.id === id);
+    if (!user)
+    {return res.status(404).json({error: "YOUR USER ID IS BEYOND THE DATA"})
+}
     return res.json(user);
 }).patch((req, res) => {
     //todo : to edit id
@@ -54,6 +59,10 @@ app.route('/api/users/:id').get((req, res) => {
 
 app.post('/api/users', (req, res) => {
     const body = req.body;
+    if(!body||!body.first_name ||!body.email ||!body.job_title )
+    {
+        return res.status(400).json({msg:"ALL FIELDS ARE REQUIRED"});
+    }
     users.push({...body,id: users.length +1});
     fs.writeFile("./MOCK_DATA.json",JSON.stringify(users),(err,data)=>{
         return res.json({ status: "pendingg" });
