@@ -31,9 +31,11 @@ app.get('/users', (req, res) => {
 
 })
 //rest apis
+//always add X to custom headers
 
 app.get('/api/users', (req, res) => {
-    res.json(users);
+    res.setHeader("X-myName","Yojina aryal");
+   return res.json(users);
 })
 
 app.route('/api/users/:id').get((req, res) => {
