@@ -6,6 +6,19 @@ const users = require("./MOCK_DATA.json")
 const port = 3000;
 //midlleware-plugin
 app.use(express.urlencoded({ extended: false }))
+app.use((req, res, next) => {
+  fs.appendFile(
+    "log.txt",
+    `\n${Date.now()}: ${req.method} ${req.path} from ${req.ip}`,
+    (err) => {
+      if (err) {
+        console.error("Error writing to log file:", err);
+      }
+      next(); 
+    }
+  );
+});
+
 
 //routes
 app.get('/users', (req, res) => {
