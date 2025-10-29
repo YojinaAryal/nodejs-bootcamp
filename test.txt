@@ -1,0 +1,3 @@
+Schema - defiine the structure
+ Schema - model
+ USING MODEL WE DO CRUD OPERATIONS
