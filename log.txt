@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1761544203618: new req received 
 1761544205243: new req received 
 1761544205402: new req received 
@@ -31,3 +32,23 @@
 1761551357125:/about?myname=yojina new req received 
 1761551368445:/ new req received 
 1761551510079:/about?myname=yojina new req received 
+=======
+
+1761627915541: GET /api/users/ from ::1
+1761632779024: GET /api/users/ from ::1
+1761632887004: GET /api/users/ from ::1
+1761633766518: GET /api/users/ from ::1
+1761644861124: GET /api/users/ from ::1
+1761644899385: GET /api/users/11 from ::1
+1761644949460: GET /api/users/11 from ::1
+1761644991366: POST /api/users from ::1
+1761645026580: POST /api/users from ::1
+1761645503948: POST /api/users from ::1
+1761645515860: GET /api/users/500 from ::1
+1761645760708: GET /api/users/500 from ::1
+1761645783833: GET /api/users/20 from ::1
+1761645851499: GET /api/users/:14 from ::1
+1761645859814: GET /api/users/15 from ::1
+1761645949362: GET /api/users/15 from ::1
+1761646013548: GET /api/users/15 from ::1
+>>>>>>> 6e71d4f (day 4 changes)
