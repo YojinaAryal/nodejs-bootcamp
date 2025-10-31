@@ -14,19 +14,19 @@ mangoose.connect
 
 //schema
 const userSchema = new mangoose.Schema({
-    first_name:{
+    first_name: {
         type: String,
-        required:true,
+        required: true,
     },
-    last_name:{
+    last_name: {
         type: String,
     },
-    email:{
+    email: {
         type: String,
         required: true,
         unique: true,
     },
-    job_title:{
+    job_title: {
         type: String,
     },
     gender:
@@ -34,9 +34,9 @@ const userSchema = new mangoose.Schema({
         type: String,
     }
 })
-const User=mangoose.model("user",userSchema);
-    //midlleware-plugin
-    app.use(express.urlencoded({ extended: false }))
+const User = mangoose.model("user", userSchema);
+//midlleware-plugin
+app.use(express.urlencoded({ extended: false }))
 app.use((req, res, next) => {
     fs.appendFile(
         "log.txt",
