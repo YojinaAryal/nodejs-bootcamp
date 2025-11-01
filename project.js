@@ -10,7 +10,11 @@ const { type } = require("os");
 const port = 3000;
 
 //connection
-mangoose.connect
+mangoose.connect ("mongodb://127.0.0.1:27017/youtube-app-1")
+.then (()=>
+    console.log("MongoDB Connected"))
+.catch(err =>console.log("Mongo error",err));
+
 
 //schema
 const userSchema = new mangoose.Schema({
@@ -35,6 +39,7 @@ const userSchema = new mangoose.Schema({
     }
 })
 const User = mangoose.model("user", userSchema);
+
 //midlleware-plugin
 app.use(express.urlencoded({ extended: false }))
 app.use((req, res, next) => {
@@ -88,17 +93,24 @@ app.route('/api/users/:id')
 
 
 
-app.post('/api/users', (req, res) => {
+app.post('/api/users', async (req, res) => {
     const body = req.body;
     if (!body || !body.first_name || !body.email || !body.job_title) {
         return res.status(400).json({ msg: "ALL FIELDS ARE REQUIRED" });
     }
-    users.push({ ...body, id: users.length + 1 });
-    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
-        return res.json({ status: "pendingg" });
-    })
 
-})
+    
+    
+    const result= await User.create({
+        firstname: body.first_name,
+        email: body.email,
+        gender: body.gender,
+        job_title: body.job_title,
+    });
+    console.log("result",result);
+    return res.status(201).json({msg: "success"});
+
+});
 
 
 
