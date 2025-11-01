@@ -3,3 +3,16 @@
 1762012734863: GET /api/users from ::1
 1762012760111: POST /api/users from ::1
 1762012766204: GET /api/users from ::1
+1762013493306: GET /api/users from ::1
+1762013505139: POST /api/users from ::1
+1762013511176: GET /api/users from ::1
+1762013666232: POST /api/users/ from ::1
+1762013749667: POST /api/users/ from ::1
+1762013755183: POST /api/users from ::1
+1762013763011: GET /api/users from ::1
+1762013819004: GET /users from ::1
+1762013819222: GET /favicon.ico from ::1
+1762013888975: GET /users from ::1
+1762013969599: GET /api/users from ::1
+1762014053865: GET /api/users from ::1
+1762014070137: GET /api/users from ::1

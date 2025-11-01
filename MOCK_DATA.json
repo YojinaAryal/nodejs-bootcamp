@@ -1,1 +1,92 @@
-[{"id":1,"first_name":"Brigitte","last_name":"Windous","email":"bwindous0@dailymail.co.uk","gender":"Female","job_title":"Administrative Officer"},{"id":2,"first_name":"Valaree","last_name":"Aldins","email":"valdins1@spiegel.de","gender":"Agender","job_title":"Financial Advisor"},{"id":3,"first_name":"Dorine","last_name":"Wigginton","email":"dwigginton2@omniture.com","gender":"Female","job_title":"VP Product Management"},{"id":4,"first_name":"Jacquie","last_name":"Giraudot","email":"jgiraudot3@huffingtonpost.com","gender":"Female","job_title":"Structural Analysis Engineer"},{"id":5,"first_name":"Bartel","last_name":"Oliva","email":"boliva4@cdbaby.com","gender":"Male","job_title":"Assistant Manager"},{"id":6,"first_name":"Heda","last_name":"Thebeau","email":"hthebeau5@ow.ly","gender":"Female","job_title":"Editor"},{"id":7,"first_name":"Benedict","last_name":"Witherby","email":"bwitherby6@apple.com","gender":"Male","job_title":"Analog Circuit Design manager"},{"id":8,"first_name":"Lonny","last_name":"Southerden","email":"lsoutherden7@privacy.gov.au","gender":"Agender","job_title":"Director of Sales"},{"id":9,"first_name":"Delaney","last_name":"Braisher","email":"dbraisher8@marketwatch.com","gender":"Genderfluid","job_title":"Environmental Specialist"},{"id":10,"first_name":"Riccardo","last_name":"Cleare","email":"rcleare9@shutterfly.com","gender":"Male","job_title":"Programmer Analyst IV"},{"first_name":"YOJINA","last_name":"ARYAL","email":"yojinaaryal204@gmail.com","gender":"FEMALE","job_title":"SOFT DEV","id":12},{"first_name":"YOJINA","last_name":"ARYAL","email":"yojinaaryal204@gmail.com","gender":"FEMALE","job_title":"SOFT DEV","id":12},{"first_name":"YOJINA","last_name":"ARYAL","email":"yojinaaryal204@gmail.com","gender":"FEMALE","job_title":"SOFT DEV","id":13}]
+[
+    {
+        "id": 1,
+        "first_name": "Brigitte",
+        "last_name": "Windous",
+        "email": "bwindous0@dailymail.co.uk",
+        "gender": "Female",
+        "job_title": "Administrative Officer"
+    },
+    {
+        "id": 2,
+        "first_name": "Valaree",
+        "last_name": "Aldins",
+        "email": "valdins1@spiegel.de",
+        "gender": "Agender",
+        "job_title": "Financial Advisor"
+    },
+    {
+        "id": 3,
+        "first_name": "Dorine",
+        "last_name": "Wigginton",
+        "email": "dwigginton2@omniture.com",
+        "gender": "Female",
+        "job_title": "VP Product Management"
+    },
+    {
+        "id": 4,
+        "first_name": "Jacquie",
+        "last_name": "Giraudot",
+        "email": "jgiraudot3@huffingtonpost.com",
+        "gender": "Female",
+        "job_title": "Structural Analysis Engineer"
+    },
+    {
+        "id": 5,
+        "first_name": "Bartel",
+        "last_name": "Oliva",
+        "email": "boliva4@cdbaby.com",
+        "gender": "Male",
+        "job_title": "Assistant Manager"
+    },
+    {
+        "id": 6,
+        "first_name": "Heda",
+        "last_name": "Thebeau",
+        "email": "hthebeau5@ow.ly",
+        "gender": "Female",
+        "job_title": "Editor"
+    },
+    {
+        "id": 7,
+        "first_name": "Benedict",
+        "last_name": "Witherby",
+        "email": "bwitherby6@apple.com",
+        "gender": "Male",
+        "job_title": "Analog Circuit Design manager"
+    },
+    {
+        "id": 8,
+        "first_name": "Lonny",
+        "last_name": "Southerden",
+        "email": "lsoutherden7@privacy.gov.au",
+        "gender": "Agender",
+        "job_title": "Director of Sales"
+    },
+    {
+        "id": 9,
+        "first_name": "Delaney",
+        "last_name": "Braisher",
+        "email": "dbraisher8@marketwatch.com",
+        "gender": "Genderfluid",
+        "job_title": "Environmental Specialist"
+    },
+    {
+        "id": 10,
+        "first_name": "Riccardo",
+        "last_name": "Cleare",
+        "email": "rcleare9@shutterfly.com",
+        "gender": "Male",
+        "job_title": "Programmer Analyst IV"
+    },
+   
+    
+    {
+        "first_name": "YOJINA",
+        "last_name": "ARYAL",
+        "email": "yojinaaryal204@gmail.com",
+        "gender": "FEMALE",
+        "job_title": "SOFT DEV",
+        "id": 13
+    }
+]
