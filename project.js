@@ -87,13 +87,23 @@ app.route('/api/users/:id')
 
 
 
-app.post('/api/users', (req, res) => {
+app.post('/api/users', async (req, res) => {
     const body = req.body;
-    if (!body || !body.first_name || !body.email || !body.job_title) {
+    if (!body || !body.first_name ||body.last_name || !body.email || !body.job_title) {
         return res.status(400).json({ msg: "ALL FIELDS ARE REQUIRED" });
     }
+    const result = await User.create({
+        firstName: body.first_name,
+        lastname: body.last_name,
+        email: body.email,
+        gender: body.gender,
+        jobtitle: body.job_title,
+     });
+     console.log("result : ",result);
+     return res.status(201).json({msg: "success"});
     
 });
+
 
 
 app.listen(port, () => {

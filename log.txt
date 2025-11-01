@@ -1,0 +1,5 @@
+
+1762012726790: GET /health from ::1
+1762012734863: GET /api/users from ::1
+1762012760111: POST /api/users from ::1
+1762012766204: GET /api/users from ::1
